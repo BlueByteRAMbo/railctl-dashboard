@@ -1,6 +1,7 @@
 import './globals.css';
 import Sidebar from '../components/Sidebar';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   title: 'RailCTL — Indian Railways Dashboard',
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
           <main className="main-content">{children}</main>
         </div>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
